@@ -60,11 +60,10 @@
             $result .= ' ('.$this->average().")\n";
 
             foreach($this->emails as $which=>$what) {
-
                     $result .= $which . ': '. $what. "\n";
             }
 
-            $result .= "\n";
+            $result .= "--------------------------";
             return '<pre>'.$result.'</pre>';
         }
     }
